@@ -26,3 +26,5 @@ set (ucan_sender_SRCS
 add_executable(ucan_sender
   ${ucan_sender_SRCS}
 )
+
+install(TARGETS ucan_discover ucan_receiver ucan_scan_network ucan_sender DESTINATION /bin)
